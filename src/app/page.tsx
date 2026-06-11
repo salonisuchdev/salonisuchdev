@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <main>
       {/* HERO */}
-      <section className="relative flex h-screen w-full items-center justify-center overflow-hidden">
+      <section className="relative flex h-[115vh] w-full items-center justify-center overflow-hidden">
         {/* Background photo — contained to this section only */}
         <div
           className="absolute inset-0"
