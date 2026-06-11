@@ -38,7 +38,7 @@ export default function Home() {
           style={{
             backgroundImage: "url('/hero.JPG')",
             backgroundSize: "cover",
-            backgroundPosition: "center 70%",
+            backgroundPosition: "center 60%",
             zIndex: 0,
           }}
         />
