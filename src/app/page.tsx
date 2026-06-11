@@ -79,18 +79,6 @@ export default function Home() {
             she / her
           </span>
 
-          <p
-            className="mt-7"
-            style={{
-              fontFamily: "var(--font-inter)",
-              fontSize: "clamp(15px, 2vw, 18px)",
-              color: "rgba(255,255,255,0.75)",
-              maxWidth: "520px",
-              lineHeight: 1.65,
-            }}
-          >
-            I help businesses stop talking about AI and start using it.
-          </p>
         </div>
 
         {/* Scroll indicator */}
