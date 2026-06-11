@@ -1,65 +1,182 @@
-import Image from "next/image";
+import Link from "next/link";
+
+const CARDS = [
+  {
+    label: "About",
+    title: "Who Am I",
+    description: "The story, the journey, and the CV.",
+    href: "/about",
+  },
+  {
+    label: "Professional",
+    title: "AI Work",
+    description: "How I use AI in account management and partnerships.",
+    href: "/professional-ai",
+  },
+  {
+    label: "Personal",
+    title: "Personal Projects",
+    description: "Three AI apps built for my own betterment.",
+    href: "/personal-ai",
+  },
+  {
+    label: "Opinions",
+    title: "What I Know So Far",
+    description: "Five articles. Unfiltered takes on business, culture, and the world.",
+    href: "/what-i-know",
+  },
+];
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <main>
+      {/* HERO */}
+      <section
+        className="relative flex h-screen w-full items-center justify-center overflow-hidden"
+        style={{ backgroundColor: "#0A0A0A" }}
+      >
+        {/* Background image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: "url('/hero.JPG')",
+            opacity: 0.35,
+          }}
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+
+        {/* Content */}
+        <div className="relative z-10 flex flex-col items-center text-center px-6">
+          <span
+            className="mb-5 text-[#F5C218] uppercase tracking-[0.15em]"
+            style={{
+              fontFamily: "var(--font-inter)",
+              fontSize: "12px",
+              fontWeight: 400,
+            }}
+          >
+            she / her
+          </span>
+
+          <h1
+            className="text-white"
+            style={{
+              fontFamily: "var(--font-cormorant)",
+              fontSize: "clamp(52px, 8vw, 96px)",
+              fontWeight: 300,
+              letterSpacing: "0.06em",
+              lineHeight: 1,
+            }}
+          >
+            SALONI SUCHDEV
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+
+          <p
+            className="mt-7"
+            style={{
+              fontFamily: "var(--font-inter)",
+              fontSize: "clamp(15px, 2vw, 18px)",
+              color: "rgba(255,255,255,0.75)",
+              maxWidth: "520px",
+              lineHeight: 1.65,
+            }}
+          >
+            I help businesses stop talking about AI and start using it.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+
+        {/* Scroll indicator */}
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-pulse">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="white"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            <line x1="12" y1="5" x2="12" y2="19" />
+            <polyline points="19 12 12 19 5 12" />
+          </svg>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* SECTION NAVIGATION */}
+      <section
+        className="w-full px-6 pb-24"
+        style={{ backgroundColor: "#F5F0E8" }}
+      >
+        <h2
+          className="text-center pt-20 pb-12"
+          style={{
+            fontFamily: "var(--font-cormorant)",
+            fontSize: "48px",
+            fontWeight: 400,
+            color: "#111111",
+          }}
+        >
+          Explore
+        </h2>
+
+        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-5 sm:grid-cols-2">
+          {CARDS.map((card) => (
+            <Link
+              key={card.href}
+              href={card.href}
+              className="group block rounded-[4px] bg-white p-10 border border-black/[0.08] transition-all duration-200 hover:border-black/20 hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] hover:-translate-y-0.5"
+            >
+              <span
+                className="text-[#F5C218] uppercase tracking-[0.1em]"
+                style={{
+                  fontFamily: "var(--font-inter)",
+                  fontSize: "11px",
+                  fontWeight: 500,
+                }}
+              >
+                {card.label}
+              </span>
+
+              <h3
+                className="mt-3"
+                style={{
+                  fontFamily: "var(--font-cormorant)",
+                  fontSize: "32px",
+                  fontWeight: 400,
+                  color: "#111111",
+                  lineHeight: 1.1,
+                }}
+              >
+                {card.title}
+              </h3>
+
+              <p
+                className="mt-3"
+                style={{
+                  fontFamily: "var(--font-inter)",
+                  fontSize: "15px",
+                  color: "#666666",
+                  lineHeight: 1.6,
+                }}
+              >
+                {card.description}
+              </p>
+
+              <span
+                className="mt-6 inline-block uppercase tracking-[0.1em] text-[#F5C218] group-hover:underline"
+                style={{
+                  fontFamily: "var(--font-inter)",
+                  fontSize: "13px",
+                  fontWeight: 500,
+                }}
+              >
+                Explore →
+              </span>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </main>
   );
 }

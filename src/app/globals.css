@@ -1,26 +1,76 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-dark-hero: #0A0A0A;
+  --color-off-white: #F5F0E8;
+  --color-butter: #F5C218;
+  --color-dark-card: #1C1C1C;
+  --color-muted: #888888;
+  --color-border-subtle: rgba(255, 255, 255, 0.1);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-dark-hero: var(--color-dark-hero);
+  --color-off-white: var(--color-off-white);
+  --color-butter: var(--color-butter);
+  --color-dark-card: var(--color-dark-card);
+  --color-muted: var(--color-muted);
+  --font-display: var(--font-cormorant), "Cormorant Garamond", serif;
+  --font-body: var(--font-inter), "Inter", sans-serif;
+  --animate-fade-in: fade-in 0.35s ease forwards;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
+@utility text-display {
+  font-family: var(--font-display);
+  font-size: 96px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+@utility text-headline {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+@utility text-section {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 400;
+}
+
+@utility text-body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+@utility text-label {
+  font-family: var(--font-body);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F5F0E8;
+  color: #111111;
+  font-family: var(--font-body);
 }
