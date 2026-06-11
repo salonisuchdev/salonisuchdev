@@ -22,7 +22,7 @@ const CARDS = [
   {
     label: "Opinions",
     title: "What I Know So Far",
-    description: "Five articles. Unfiltered takes on business, culture, and the world.",
+    description: "Unfiltered takes on business, technology, fashion, and culture.",
     href: "/what-i-know",
   },
 ];
@@ -30,153 +30,159 @@ const CARDS = [
 export default function Home() {
   return (
     <main>
-      {/* HERO */}
-      <section
-        className="relative flex h-screen w-full items-center justify-center overflow-hidden"
-        style={{ backgroundColor: "#0A0A0A" }}
+      <div
+        className="relative"
+        style={{
+          minHeight: "100vh",
+        }}
       >
-        {/* Background image */}
+        {/* Full-page hero background */}
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="fixed inset-0"
           style={{
             backgroundImage: "url('/hero.JPG')",
-            opacity: 0.35,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundAttachment: "fixed",
+            zIndex: -2,
           }}
         />
 
-        {/* Content */}
-        <div className="relative z-10 flex flex-col items-center text-center px-6">
-          <span
-            className="mb-5 text-[#F5C218] uppercase tracking-[0.15em]"
-            style={{
-              fontFamily: "var(--font-inter)",
-              fontSize: "12px",
-              fontWeight: 400,
-            }}
-          >
-            she / her
-          </span>
-
-          <h1
-            className="text-white"
-            style={{
-              fontFamily: "var(--font-cormorant)",
-              fontSize: "clamp(52px, 8vw, 96px)",
-              fontWeight: 300,
-              letterSpacing: "0.06em",
-              lineHeight: 1,
-            }}
-          >
-            SALONI SUCHDEV
-          </h1>
-
-          <p
-            className="mt-7"
-            style={{
-              fontFamily: "var(--font-inter)",
-              fontSize: "clamp(15px, 2vw, 18px)",
-              color: "rgba(255,255,255,0.75)",
-              maxWidth: "520px",
-              lineHeight: 1.65,
-            }}
-          >
-            I help businesses stop talking about AI and start using it.
-          </p>
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-pulse">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="white"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            aria-hidden="true"
-          >
-            <line x1="12" y1="5" x2="12" y2="19" />
-            <polyline points="19 12 12 19 5 12" />
-          </svg>
-        </div>
-      </section>
-
-      {/* SECTION NAVIGATION */}
-      <section
-        className="w-full px-6 pb-24"
-        style={{ backgroundColor: "#F5F0E8" }}
-      >
-        <h2
-          className="text-center pt-20 pb-12"
+        {/* Dark overlay */}
+        <div
+          className="fixed inset-0"
           style={{
-            fontFamily: "var(--font-cormorant)",
-            fontSize: "48px",
-            fontWeight: 400,
-            color: "#111111",
+            background: "rgba(0,0,0,0.6)",
+            zIndex: -1,
           }}
-        >
-          Explore
-        </h2>
+        />
 
-        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-5 sm:grid-cols-2">
-          {CARDS.map((card) => (
-            <Link
-              key={card.href}
-              href={card.href}
-              className="group block rounded-[4px] bg-white p-10 border border-black/[0.08] transition-all duration-200 hover:border-black/20 hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] hover:-translate-y-0.5"
+        {/* HERO */}
+        <section className="relative flex h-screen w-full items-center justify-center overflow-hidden">
+          {/* Content */}
+          <div className="relative z-10 flex flex-col items-center text-center px-6">
+            <h1
+              className="text-white"
+              style={{
+                fontFamily: "var(--font-cormorant)",
+                fontSize: "clamp(52px, 8vw, 96px)",
+                fontWeight: 300,
+                letterSpacing: "0.06em",
+                lineHeight: 1,
+              }}
             >
-              <span
-                className="text-[#F5C218] uppercase tracking-[0.1em]"
-                style={{
-                  fontFamily: "var(--font-inter)",
-                  fontSize: "11px",
-                  fontWeight: 500,
-                }}
-              >
-                {card.label}
-              </span>
+              SALONI SUCHDEV
+            </h1>
 
-              <h3
-                className="mt-3"
-                style={{
-                  fontFamily: "var(--font-cormorant)",
-                  fontSize: "32px",
-                  fontWeight: 400,
-                  color: "#111111",
-                  lineHeight: 1.1,
-                }}
-              >
-                {card.title}
-              </h3>
+            <span
+              className="text-[#F5C218] uppercase tracking-[0.15em]"
+              style={{
+                fontFamily: "var(--font-inter)",
+                fontSize: "12px",
+                fontWeight: 400,
+                marginTop: "12px",
+              }}
+            >
+              she / her
+            </span>
 
-              <p
-                className="mt-3"
-                style={{
-                  fontFamily: "var(--font-inter)",
-                  fontSize: "15px",
-                  color: "#666666",
-                  lineHeight: 1.6,
-                }}
-              >
-                {card.description}
-              </p>
+            <p
+              className="mt-7"
+              style={{
+                fontFamily: "var(--font-inter)",
+                fontSize: "clamp(15px, 2vw, 18px)",
+                color: "rgba(255,255,255,0.75)",
+                maxWidth: "520px",
+                lineHeight: 1.65,
+              }}
+            >
+              I help businesses stop talking about AI and start using it.
+            </p>
+          </div>
 
-              <span
-                className="mt-6 inline-block uppercase tracking-[0.1em] text-[#F5C218] group-hover:underline"
+          {/* Scroll indicator */}
+          <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-pulse">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="white"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <line x1="12" y1="5" x2="12" y2="19" />
+              <polyline points="19 12 12 19 5 12" />
+            </svg>
+          </div>
+        </section>
+
+        {/* SECTION NAVIGATION */}
+        <section className="relative z-10 w-full px-6 pb-24 pt-20">
+          <div className="mx-auto grid max-w-5xl grid-cols-1 gap-5 sm:grid-cols-2">
+            {CARDS.map((card) => (
+              <Link
+                key={card.href}
+                href={card.href}
+                className="group block rounded-[4px] p-10 transition-all duration-200 hover:-translate-y-0.5"
                 style={{
-                  fontFamily: "var(--font-inter)",
-                  fontSize: "13px",
-                  fontWeight: 500,
+                  background: "rgba(255,255,255,0.08)",
+                  border: "1px solid rgba(255,255,255,0.15)",
                 }}
               >
-                Explore →
-              </span>
-            </Link>
-          ))}
-        </div>
-      </section>
+                <span
+                  className="text-[#F5C218] uppercase tracking-[0.1em]"
+                  style={{
+                    fontFamily: "var(--font-inter)",
+                    fontSize: "11px",
+                    fontWeight: 500,
+                  }}
+                >
+                  {card.label}
+                </span>
+
+                <h3
+                  className="mt-3"
+                  style={{
+                    fontFamily: "var(--font-cormorant)",
+                    fontSize: "32px",
+                    fontWeight: 400,
+                    color: "white",
+                    lineHeight: 1.1,
+                  }}
+                >
+                  {card.title}
+                </h3>
+
+                <p
+                  className="mt-3"
+                  style={{
+                    fontFamily: "var(--font-inter)",
+                    fontSize: "15px",
+                    color: "rgba(255,255,255,0.7)",
+                    lineHeight: 1.6,
+                  }}
+                >
+                  {card.description}
+                </p>
+
+                <span
+                  className="mt-6 inline-block uppercase tracking-[0.1em] text-[#F5C218] group-hover:underline"
+                  style={{
+                    fontFamily: "var(--font-inter)",
+                    fontSize: "13px",
+                    fontWeight: 500,
+                  }}
+                >
+                  Explore →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </section>
+      </div>
     </main>
   );
 }

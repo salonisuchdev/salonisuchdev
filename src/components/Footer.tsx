@@ -99,6 +99,15 @@ export default function Footer() {
               {link.label}
             </a>
           ))}
+          <span
+            style={{
+              fontFamily: "var(--font-inter)",
+              fontSize: "13px",
+              color: "#888888",
+            }}
+          >
+            +33 7 69 65 28 42
+          </span>
         </div>
       </div>
 
