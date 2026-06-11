@@ -31,14 +31,14 @@ export default function Home() {
   return (
     <main>
       {/* HERO */}
-      <section className="relative flex w-full overflow-hidden" style={{ minHeight: "120vh", justifyContent: "center", alignItems: "flex-start" }}>
+      <section className="relative flex w-full overflow-hidden" style={{ minHeight: "120vh", flexDirection: "column", justifyContent: "flex-start", alignItems: "center" }}>
         {/* Background photo — contained to this section only */}
         <div
           className="absolute inset-0"
           style={{
             backgroundImage: "url('/hero.JPG')",
             backgroundSize: "cover",
-            backgroundPosition: "center 20%",
+            backgroundPosition: "center 70%",
             zIndex: 0,
           }}
         />
@@ -47,13 +47,13 @@ export default function Home() {
         <div
           className="absolute inset-0"
           style={{
-            background: "rgba(0,0,0,0.45)",
+            background: "rgba(0,0,0,0.4)",
             zIndex: 1,
           }}
         />
 
         {/* Content */}
-        <div className="relative z-10 flex flex-col items-center text-center px-6" style={{ paddingTop: "120px" }}>
+        <div className="relative z-10 flex flex-col items-center text-center px-6" style={{ paddingTop: "100px" }}>
           <h1
             className="text-white"
             style={{
