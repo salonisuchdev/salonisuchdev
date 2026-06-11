@@ -31,14 +31,14 @@ export default function Home() {
   return (
     <main>
       {/* HERO */}
-      <section className="relative flex h-[115vh] w-full items-center justify-center overflow-hidden">
+      <section className="relative flex w-full overflow-hidden" style={{ minHeight: "120vh", justifyContent: "center", alignItems: "flex-start" }}>
         {/* Background photo — contained to this section only */}
         <div
           className="absolute inset-0"
           style={{
             backgroundImage: "url('/hero.JPG')",
             backgroundSize: "cover",
-            backgroundPosition: "center",
+            backgroundPosition: "center 20%",
             zIndex: 0,
           }}
         />
@@ -53,7 +53,7 @@ export default function Home() {
         />
 
         {/* Content */}
-        <div className="relative z-10 flex flex-col items-center text-center px-6">
+        <div className="relative z-10 flex flex-col items-center text-center px-6" style={{ paddingTop: "120px" }}>
           <h1
             className="text-white"
             style={{
