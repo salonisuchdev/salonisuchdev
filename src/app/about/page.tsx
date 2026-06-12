@@ -76,7 +76,6 @@ const EDUCATION = [
     bullets: [
       "Recipient of the Henriette and Nobert Albin Scholarship for high-achieving women leaders",
       "VP of Retail and Luxury Goods Club; Negotiation Cup Finalist",
-      "Co-founded Serve.ai, a fashion-tech AI tool for personalized outfit recommendations",
     ],
   },
   {
