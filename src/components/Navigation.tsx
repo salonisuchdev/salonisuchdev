@@ -18,8 +18,6 @@ export default function Navigation() {
 
   // Pages that start with a light (#F5F0E8) background need dark nav links
   const isLightPage = pathname === "/about";
-  const linkColor = isLightPage ? "#1C1C1C" : "white";
-  const hamburgerColor = isLightPage ? "#1C1C1C" : "white";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 100);
@@ -52,8 +50,8 @@ export default function Navigation() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="text-[13px] font-medium uppercase tracking-[0.1em] hover:text-[#F5C218] transition-colors duration-200"
-                style={{ fontFamily: "var(--font-body)", color: linkColor }}
+                className={`text-[13px] font-medium uppercase tracking-[0.1em] transition-colors duration-200 hover:text-[#F5C218] ${isLightPage ? "text-[#1C1C1C]" : "text-white"}`}
+                style={{ fontFamily: "var(--font-body)" }}
               >
                 {link.label}
               </Link>
@@ -62,8 +60,7 @@ export default function Navigation() {
         </ul>
 
         <button
-          className="md:hidden p-1"
-          style={{ color: hamburgerColor }}
+          className={`md:hidden p-1 ${isLightPage ? "text-[#1C1C1C]" : "text-white"}`}
           onClick={() => setMenuOpen((prev) => !prev)}
           aria-label="Toggle menu"
           aria-expanded={menuOpen}
@@ -105,8 +102,8 @@ export default function Navigation() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-[13px] font-medium uppercase tracking-[0.1em] hover:text-[#F5C218] transition-colors duration-200"
-              style={{ fontFamily: "var(--font-body)", color: linkColor }}
+              className={`text-[13px] font-medium uppercase tracking-[0.1em] transition-colors duration-200 hover:text-[#F5C218] ${isLightPage ? "text-[#1C1C1C]" : "text-white"}`}
+              style={{ fontFamily: "var(--font-body)" }}
               onClick={() => setMenuOpen(false)}
             >
               {link.label}
