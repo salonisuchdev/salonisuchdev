@@ -143,7 +143,7 @@ export default function ProfessionalAI() {
                 src="/artifact-industry-intelligence.jpg"
                 alt="CPG Industry Intelligence briefing"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
@@ -170,7 +170,7 @@ export default function ProfessionalAI() {
                   lineHeight: 1.15,
                 }}
               >
-                CPG Industry Intelligence
+                Consumer Products Industry Intelligence
               </h2>
 
               <div
@@ -203,33 +203,31 @@ export default function ProfessionalAI() {
                   color: "#888888",
                 }}
               >
-                Built with Claude AI · Delivered daily at 10:00 CET
+                Built with Claude AI · Delivered daily at 10:00 CET via Outlook
               </p>
+
+              <a
+                href="/sample-industry-intelligence.pdf"
+                download
+                className="inline-block mt-6 px-6 py-3 rounded-[2px] border border-[#111111] text-[#111111] hover:bg-[#111111] hover:text-white transition-colors duration-200 uppercase tracking-[0.1em] text-[12px] font-medium"
+                style={{ fontFamily: "var(--font-inter)", width: "fit-content" }}
+              >
+                Download Sample
+              </a>
             </div>
           </article>
 
           {/* TOOL 3 — Weekly Update (two stacked images left) */}
           <article className="flex flex-col md:flex-row overflow-hidden rounded-[2px]">
             {/* Two stacked images */}
-            <div className="flex flex-col w-full md:w-1/2 self-stretch min-h-[400px]">
-              <div className="relative flex-1">
-                <Image
-                  src="/artifact-weekly-cover.jpg"
-                  alt="Weekly client update cover"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
-              <div className="relative flex-1">
-                <Image
-                  src="/artifact-weekly-snapshot.jpg"
-                  alt="Weekly client update snapshot"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
+            <div className="relative w-full md:w-1/2 min-h-[400px] self-stretch">
+              <Image
+                src="/artifact-weekly-cover.jpg"
+                alt="Weekly client update cover"
+                fill
+                className="object-cover object-top"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </div>
 
             {/* Content */}
