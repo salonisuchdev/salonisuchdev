@@ -9,7 +9,7 @@ const CARDS = [
   },
   {
     label: "Professional",
-    title: "AI Work",
+    title: "AI in Practice",
     description: "How I use AI in account management and partnerships.",
     href: "/professional-ai",
   },
