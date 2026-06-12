@@ -36,17 +36,6 @@ export default function Footer() {
         {/* Left — identity */}
         <div className="flex flex-col gap-2">
           <span
-            className="text-[#F5C218]"
-            style={{
-              fontFamily: "var(--font-cormorant)",
-              fontSize: "32px",
-              fontWeight: 400,
-              lineHeight: 1,
-            }}
-          >
-            SS
-          </span>
-          <span
             className="text-white mt-1"
             style={{ fontFamily: "var(--font-inter)", fontSize: "13px" }}
           >

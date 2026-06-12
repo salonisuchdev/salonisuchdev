@@ -35,7 +35,7 @@ export default function WhatIKnow() {
               lineHeight: 1.65,
             }}
           >
-            Five articles. Unfiltered takes on business, culture, and the world.
+            Unfiltered takes on business, technology, fashion, and culture.
           </p>
         </div>
       </section>
@@ -59,8 +59,8 @@ export default function WhatIKnow() {
                 className="shrink-0 w-8 tabular-nums"
                 style={{
                   fontFamily: "var(--font-cormorant)",
-                  fontSize: "13px",
-                  color: "#aaaaaa",
+                  fontSize: "16px",
+                  color: "#888888",
                 }}
               >
                 {String(idx + 1).padStart(2, "0")}

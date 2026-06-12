@@ -37,13 +37,15 @@ export default function Navigation() {
       }}
     >
       <div className="flex items-center justify-between px-8 py-6">
-        <Link
-          href="/"
-          className="text-[#F5C218] font-medium text-[14px] leading-none"
-          style={{ fontFamily: "var(--font-body)" }}
-        >
-          Saloni Suchdev
-        </Link>
+        {pathname !== "/" && (
+          <Link
+            href="/"
+            className="text-[#F5C218] font-medium text-[14px] leading-none"
+            style={{ fontFamily: "var(--font-body)" }}
+          >
+            Saloni Suchdev
+          </Link>
+        )}
 
         <ul className="hidden md:flex items-center gap-8">
           {NAV_LINKS.map((link) => (

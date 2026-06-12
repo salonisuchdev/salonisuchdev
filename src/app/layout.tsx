@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Inter } from "next/font/google";
+import { Fraunces, DM_Sans } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import PageTransition from "@/components/PageTransition";
 
-const cormorant = Cormorant_Garamond({
+const cormorant = Fraunces({
   variable: "--font-cormorant",
   weight: ["300", "400", "500", "600"],
   subsets: ["latin"],
   display: "swap",
 });
 
-const inter = Inter({
+const inter = DM_Sans({
   variable: "--font-inter",
   weight: ["400", "500"],
   subsets: ["latin"],
