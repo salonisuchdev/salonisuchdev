@@ -17,7 +17,7 @@ export default function ProfessionalAI() {
             className="uppercase tracking-[0.1em] text-[#F5C218]"
             style={{ fontFamily: "var(--font-inter)", fontSize: "11px", fontWeight: 500 }}
           >
-            Professional
+            AI
           </span>
 
           <h1
@@ -29,7 +29,7 @@ export default function ProfessionalAI() {
               lineHeight: 1,
             }}
           >
-            AI Work
+            AI in Practice
           </h1>
 
           <p
@@ -59,7 +59,7 @@ export default function ProfessionalAI() {
                 src="/artifact-client-intelligence.jpg"
                 alt="CPG Client Intelligence briefing"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
@@ -86,7 +86,7 @@ export default function ProfessionalAI() {
                   lineHeight: 1.15,
                 }}
               >
-                CPG Client Intelligence
+                Consumer Products Client Intelligence
               </h2>
 
               <div
@@ -101,9 +101,10 @@ export default function ProfessionalAI() {
                 <p>
                   Every account manager should know what happened at their
                   client's company before the client tells them. This tool
-                  delivers a daily briefing on six major CPG accounts: leadership
-                  changes, M&A activity, financial results, and product launches,
-                  organised by company and tagged by category.
+                  delivers a daily briefing via email on six major consumer
+                  products accounts: leadership changes, M&A activity, financial
+                  results, and product launches, organised by company and tagged
+                  by category.
                 </p>
                 <p>
                   I use it to spot upsell triggers, prepare for client
@@ -120,8 +121,17 @@ export default function ProfessionalAI() {
                   color: "#888888",
                 }}
               >
-                Built with Claude AI · Delivered daily at 10:00 CET
+                Built with Claude AI · Delivered daily at 10:00 CET on weekdays via Outlook
               </p>
+
+              <a
+                href="/sample-client-intelligence.pdf"
+                download
+                className="inline-block mt-6 px-6 py-3 rounded-[2px] border border-[#111111] text-[#111111] hover:bg-[#111111] hover:text-white transition-colors duration-200 uppercase tracking-[0.1em] text-[12px] font-medium"
+                style={{ fontFamily: "var(--font-inter)", width: "fit-content" }}
+              >
+                Download Sample
+              </a>
             </div>
           </article>
 

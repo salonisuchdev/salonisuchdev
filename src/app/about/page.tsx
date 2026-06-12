@@ -73,6 +73,7 @@ const EDUCATION = [
     degree: "MBA",
     dates: "2025 – 2026",
     note: "Class of July 2026",
+    current: true,
     bullets: [
       "Recipient of the Henriette and Nobert Albin Scholarship for high-achieving women leaders",
       "VP of Retail and Luxury Goods Club; Negotiation Cup Finalist",
@@ -84,6 +85,7 @@ const EDUCATION = [
     degree: "B.Tech Computer and Communication Engineering",
     dates: "2015 – 2019",
     note: null,
+    current: false,
     bullets: [],
   },
 ];
@@ -314,7 +316,7 @@ export default function About() {
             {EDUCATION.map((edu, eduIdx) => (
               <div
                 key={edu.institution}
-                className={`py-10 ${eduIdx < EDUCATION.length - 1 ? "border-b border-black/[0.08]" : ""}`}
+                className={`py-10 ${eduIdx < EDUCATION.length - 1 ? "border-b border-black/[0.08]" : ""} ${edu.current ? "pl-5 border-l-[3px] border-l-[#F5C218]" : ""}`}
               >
                 <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
                   <span

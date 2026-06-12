@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const NAV_LINKS = [
   { label: "Who Am I", href: "/about" },
-  { label: "AI Work", href: "/professional-ai" },
+  { label: "AI in Practice", href: "/professional-ai" },
   { label: "Personal Projects", href: "/personal-ai" },
   { label: "What I Know So Far", href: "/what-i-know" },
 ];
