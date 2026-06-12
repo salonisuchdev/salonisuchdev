@@ -14,13 +14,6 @@ export default function WhatIKnow() {
         }}
       >
         <div className="mx-auto max-w-4xl">
-          <span
-            className="uppercase tracking-[0.1em] text-[#F5C218]"
-            style={{ fontFamily: "var(--font-inter)", fontSize: "11px", fontWeight: 500 }}
-          >
-            Opinions
-          </span>
-
           <h1
             className="mt-4 text-white"
             style={{

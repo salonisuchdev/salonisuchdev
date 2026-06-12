@@ -43,13 +43,6 @@ export default function PersonalAI() {
         style={{ paddingTop: "120px", paddingBottom: "60px" }}
       >
         <div className="mx-auto max-w-5xl">
-          <span
-            className="uppercase tracking-[0.1em] text-[#F5C218]"
-            style={{ fontFamily: "var(--font-inter)", fontSize: "11px", fontWeight: 500 }}
-          >
-            Personal Projects
-          </span>
-
           <h1
             className="mt-4 text-white"
             style={{

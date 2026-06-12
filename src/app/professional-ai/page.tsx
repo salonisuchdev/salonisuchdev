@@ -13,13 +13,6 @@ export default function ProfessionalAI() {
         }}
       >
         <div className="mx-auto max-w-4xl">
-          <span
-            className="uppercase tracking-[0.1em] text-[#F5C218]"
-            style={{ fontFamily: "var(--font-inter)", fontSize: "11px", fontWeight: 500 }}
-          >
-            AI
-          </span>
-
           <h1
             className="mt-4 text-white"
             style={{
@@ -121,7 +114,7 @@ export default function ProfessionalAI() {
                   color: "#888888",
                 }}
               >
-                Built with Claude AI · Delivered daily at 10:00 CET on weekdays via Outlook
+                Delivered daily at 10:00 CET via Outlook
               </p>
 
               <a
@@ -203,7 +196,7 @@ export default function ProfessionalAI() {
                   color: "#888888",
                 }}
               >
-                Built with Claude AI · Delivered daily at 10:00 CET via Outlook
+                Delivered daily at 10:00 CET via Outlook
               </p>
 
               <a
@@ -284,7 +277,7 @@ export default function ProfessionalAI() {
                   color: "#888888",
                 }}
               >
-                Built with Claude AI · Delivered every Friday at 10:00 CET
+                Delivered every Friday at 10:00 CET via Outlook
               </p>
             </div>
           </article>

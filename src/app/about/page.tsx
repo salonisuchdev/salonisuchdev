@@ -121,13 +121,6 @@ export default function About() {
         <div className="mx-auto max-w-6xl flex flex-col md:flex-row gap-16 md:gap-12 lg:gap-20">
           {/* Left — 60% */}
           <div className="flex-[3]">
-            <span
-              className="uppercase tracking-[0.1em] text-[#F5C218]"
-              style={{ fontFamily: "var(--font-inter)", fontSize: "11px", fontWeight: 500 }}
-            >
-              Who Am I
-            </span>
-
             <h1
               className="mt-4"
               style={{
