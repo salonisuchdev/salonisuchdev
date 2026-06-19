@@ -1,19 +1,48 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import { articles } from "./data/articles";
 
+const ARTICLE_IMAGES: Record<string, string> = {
+  "loewe-peggy-gou": "/article-loewe.jpg",
+  "agriculture-ai": "/article-agriculture.jpg",
+  "billionaire-playbook": "/article-billionaire.jpg",
+  "plenty-of-fish": "/article-fish.jpg",
+  "coca-cola-partnerships": "/article-cocacola.jpg",
+};
+
 export default function WhatIKnow() {
+  const [hoveredSlug, setHoveredSlug] = useState<string | null>(null);
+
   return (
     <main>
       {/* PAGE HEADER */}
       <section
-        className="w-full px-6 md:px-16 lg:px-24"
-        style={{
-          backgroundColor: "#0A0A0A",
-          paddingTop: "120px",
-          paddingBottom: "80px",
-        }}
+        className="relative w-full px-6 md:px-16 lg:px-24 overflow-hidden"
+        style={{ backgroundColor: "#0A0A0A", paddingTop: "120px", paddingBottom: "80px" }}
       >
-        <div className="mx-auto max-w-4xl">
+        {/* One image layer per article, crossfades on hover */}
+        {articles.map((article) => (
+          <div
+            key={article.slug}
+            className="absolute inset-0"
+            style={{
+              backgroundImage: `url('${ARTICLE_IMAGES[article.slug]}')`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              opacity: hoveredSlug === article.slug ? 1 : 0,
+              transition: "opacity 0.7s ease",
+            }}
+          />
+        ))}
+        {/* Dark overlay so text stays readable */}
+        <div
+          className="absolute inset-0"
+          style={{ background: "rgba(0,0,0,0.6)", zIndex: 1 }}
+        />
+        {/* Text content */}
+        <div className="relative mx-auto max-w-4xl" style={{ zIndex: 2 }}>
           <h1
             className="mt-4 text-white"
             style={{
@@ -25,7 +54,6 @@ export default function WhatIKnow() {
           >
             What I Know So Far
           </h1>
-
           <p
             className="mt-5"
             style={{
@@ -53,6 +81,8 @@ export default function WhatIKnow() {
               className={`group flex items-center gap-6 py-10 border-t border-black/[0.12] cursor-pointer ${
                 idx === articles.length - 1 ? "border-b" : ""
               }`}
+              onMouseEnter={() => setHoveredSlug(article.slug)}
+              onMouseLeave={() => setHoveredSlug(null)}
             >
               {/* Number */}
               <span
@@ -68,7 +98,7 @@ export default function WhatIKnow() {
 
               {/* Title */}
               <span
-                className="flex-1 text-center transition-colors duration-200 group-hover:text-[#F5C218]"
+                className="flex-1 text-center group-hover:scale-[1.04] origin-left transition-all duration-300"
                 style={{
                   fontFamily: "var(--font-cormorant)",
                   fontSize: "clamp(20px, 2.5vw, 28px)",

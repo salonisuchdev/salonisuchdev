@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
-import { Fraunces, DM_Sans } from "next/font/google";
+import { Gilda_Display, Karla } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import PageTransition from "@/components/PageTransition";
 
-const cormorant = Fraunces({
+const cormorant = Gilda_Display({
   variable: "--font-cormorant",
-  weight: ["300", "400", "500", "600"],
+  weight: "400",
   subsets: ["latin"],
   display: "swap",
 });
 
-const inter = DM_Sans({
+const inter = Karla({
   variable: "--font-inter",
   weight: ["400", "500"],
   subsets: ["latin"],

@@ -1,32 +1,5 @@
 import Link from "next/link";
 
-const CARDS = [
-  {
-    label: "About",
-    title: "Who Am I",
-    description: "The story, the journey, and the CV.",
-    href: "/about",
-  },
-  {
-    label: "Professional",
-    title: "AI in Practice",
-    description: "How I use AI in account management and partnerships.",
-    href: "/professional-ai",
-  },
-  {
-    label: "Personal",
-    title: "Personal Projects",
-    description: "Three AI apps built for my own betterment.",
-    href: "/personal-ai",
-  },
-  {
-    label: "Opinions",
-    title: "What I Know So Far",
-    description: "Unfiltered takes on business, technology, fashion, and culture.",
-    href: "/what-i-know",
-  },
-];
-
 export default function Home() {
   return (
     <main>
@@ -101,71 +74,66 @@ export default function Home() {
       </section>
 
       {/* SECTION NAVIGATION */}
-      <section
-        className="relative w-full px-6"
-        style={{
-          background: "#0A0A0A",
-          paddingTop: "80px",
-          paddingBottom: "80px",
-        }}
-      >
-        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-5 sm:grid-cols-2">
-          {CARDS.map((card) => (
+      <section style={{ background: "#0A0A0A" }}>
+        <div className="mx-auto max-w-7xl px-6 md:px-8">
+          {[
+            {
+              title: "Who Am I",
+              description: "The story, the journey, and the CV.",
+              href: "/about",
+            },
+            {
+              title: "AI in Practice",
+              description: "How I use AI in account management and partnerships.",
+              href: "/professional-ai",
+            },
+            {
+              title: "Personal Projects",
+              description: "Three AI apps built for my own betterment.",
+              href: "/personal-ai",
+            },
+            {
+              title: "What I Know So Far",
+              description: "Unfiltered takes on business, technology, fashion, and culture.",
+              href: "/what-i-know",
+            },
+          ].map((item) => (
             <Link
-              key={card.href}
-              href={card.href}
-              className="group block rounded-[4px] p-10 transition-all duration-200 hover:-translate-y-0.5"
-              style={{
-                background: "rgba(255,255,255,0.08)",
-                border: "1px solid rgba(255,255,255,0.15)",
-              }}
+              key={item.href}
+              href={item.href}
+              className="group flex items-center justify-between gap-8 py-16 border-t border-white/10 last:border-b hover:bg-white/[0.02] transition-all duration-300"
             >
-              <span
-                className="text-[#F5C218] uppercase tracking-[0.1em]"
-                style={{
-                  fontFamily: "var(--font-inter)",
-                  fontSize: "11px",
-                  fontWeight: 500,
-                }}
-              >
-                {card.label}
-              </span>
-
               <h3
-                className="mt-3"
+                className="text-white group-hover:text-[#F5C218] group-hover:scale-[1.04] transition-all duration-300 shrink-0 origin-left"
                 style={{
                   fontFamily: "var(--font-cormorant)",
-                  fontSize: "32px",
+                  fontSize: "clamp(28px, 4vw, 52px)",
                   fontWeight: 400,
-                  color: "white",
                   lineHeight: 1.1,
                 }}
               >
-                {card.title}
+                {item.title}
               </h3>
 
-              <p
-                className="mt-3"
-                style={{
-                  fontFamily: "var(--font-inter)",
-                  fontSize: "15px",
-                  color: "rgba(255,255,255,0.7)",
-                  lineHeight: 1.6,
-                }}
-              >
-                {card.description}
-              </p>
-
-              <span
-                className="mt-6 inline-block uppercase tracking-[0.1em] text-[#F5C218] group-hover:underline"
-                style={{
-                  fontFamily: "var(--font-inter)",
-                  fontSize: "13px",
-                  fontWeight: 500,
-                }}
-              >
-                Explore →
-              </span>
+              <div className="flex items-center gap-6 min-w-0">
+                <p
+                  className="hidden md:block text-right"
+                  style={{
+                    fontFamily: "var(--font-inter)",
+                    fontSize: "15px",
+                    color: "rgba(255,255,255,0.45)",
+                    lineHeight: 1.6,
+                  }}
+                >
+                  {item.description}
+                </p>
+                <span
+                  className="text-[#F5C218] shrink-0 group-hover:translate-x-2 transition-transform duration-300"
+                  style={{ fontSize: "20px" }}
+                >
+                  →
+                </span>
+              </div>
             </Link>
           ))}
         </div>
