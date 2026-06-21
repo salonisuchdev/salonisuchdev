@@ -4,17 +4,18 @@ const EXPERIENCE = [
   {
     company: "Vision Group Retail",
     location: "Bengaluru, India",
-    description: "AI-led retail intelligence SaaS for global CPG and FMCG brands",
+    description: "Scale-up providing AI-led retail intelligence SaaS solutions for global CPG & FMCG brands; USD 60M global ARR",
     current: true,
     roles: [
       {
         title: "Regional Head, Customer Success",
         dates: "2023 – 2025",
         bullets: [
-          "Led end-to-end sales cycle across Southeast Asia and Oceania, doubling APAC ARR from USD 4M to USD 8M in Year 1",
-          "Presented to C-suite at global retail conferences and negotiated three strategic contracts across Hong Kong, Japan, and Vietnam",
-          "Secured a USD 2M ARR three-year SaaS contract with an international ice-cream brand through market visits and digital GTM programs",
-          "Drove client adoption of a first-of-its-kind IoT and image-recognition smart vending system for the world's largest non-alcoholic beverage company, delivering a 38% uplift in beverage sales across Australia, New Zealand, and Singapore",
+          "Doubled APAC ARR from USD 4M to USD 8M in Y1 by leading the full sales cycle, onboarding new contracts, and cross-selling dynamic pricing models across Southeast Asia and Oceania",
+          "Closed three strategic contracts against competitors, carrying out quarterly and annual business reviews and scoping sessions with C-suite clients while owning monthly revenue targets with sales and finance",
+          "Secured a USD 2M ARR, 3-year SaaS contract with an international ice-cream brand by running market visits, retail layout analysis, and digital GTM programmes across Southeast Asia, boosting regional sales by 7%",
+          "Managed a team of 4 PMs and 3 retail business streams, driving AI and data programmes end to end using insights from 98% accurate machine learning models across the APAC landscape",
+          "Drove adoption of a first-of-its-kind IoT and image-recognition smart vending system for the world's largest beverage company, delivering a 38% increase in sales across airports and universities across Oceania, securing European expansion",
         ],
       },
     ],
@@ -22,44 +23,45 @@ const EXPERIENCE = [
   {
     company: "Infilect Technologies",
     location: "Bengaluru, India",
-    description: "FMCG retail intelligence start-up",
+    description: "Start-up delivering FMCG retail intelligence to drive in-store sales; USD 4M ARR",
     current: false,
     roles: [
       {
         title: "Lead Project Manager",
         dates: "2022 – 2023",
         bullets: [
-          "Led AI-based retail execution programs amplifying in-store sales by 2–4% for food and beverage brands",
-          "Increased revenue by 18% (USD 1.5M) through strategic account onboarding with 85% POC-to-production conversion globally",
+          "Led end-to-end AI-based execution programs to amplify monthly in-store sales by 3–4% (~USD 5M) for food & beverage brands tracking data-driven KPIs (market share, product positioning & compliance, promotions & discounts), mentoring a team of 7 PMs",
+          "Increased revenue by 18% (USD 1.5M) by prioritising and strategically onboarding new accounts while achieving over 85% POC-to-production conversion rate globally",
         ],
       },
       {
         title: "Senior Project Manager",
         dates: "2021 – 2022",
         bullets: [
-          "Increased customer satisfaction by 27% and retention by 34% through data-driven analytical insights",
-          "Expanded product adoption to EU and USA by 55% through API and SDK integrations",
+          "Optimised data pipelines, operational frameworks, and SLAs, increasing customer satisfaction by 27% and customer retention by 34% through data-driven analytical insights and iterative client feedback loops",
+          "Expanded product, SDK, and API adoption to EU and USA by 1.5x via collaboration with product and development teams to establish APIs and SDKs for mobile application ease of use, compatibility, and integrations",
         ],
       },
       {
         title: "Project Manager",
         dates: "2020 – 2021",
-        bullets: ["Created and scaled a Pilot Playbook improving team efficiency by 40%"],
+        bullets: [
+          "Created, from scratch to finish, and scaled a comprehensive Pilot Playbook, streamlining processes and improving team efficiency by 40%, driving operational excellence and fostering cross-functional collaboration",
+        ],
       },
     ],
   },
   {
     company: "Sabre Corporation",
     location: "Bengaluru, India",
-    description: "Software technology for global travel and aviation",
+    description: "Software technology company for global travel and aviation industry",
     current: false,
     roles: [
       {
-        title: "Business Analyst",
+        title: "Business Analyst – Flight Planning and Scheduling",
         dates: "2019 – 2020",
         bullets: [
-          "Configured flight planning tools to increase profits for European and Middle Eastern airlines by 2–3%",
-          "Reduced operational costs by 10–12% through optimized fleet capacity planning",
+          "Lifted profits by USD 19M for European and Middle Eastern airlines and cut operational costs by 12% (~USD 7–8M) by programming in-house flight planning tools, identifying top expansion markets, and correcting fleet capacity and maintenance inefficiencies",
         ],
       },
     ],
@@ -75,14 +77,15 @@ const EDUCATION = [
     note: "Class of July 2026",
     current: true,
     bullets: [
-      "Recipient of the Henriette and Nobert Albin Scholarship for high-achieving women leaders",
-      "VP of Retail and Luxury Goods Club; Negotiation Cup Finalist",
+      "Recipient of Henriette and Nobert Albin Scholarship, awarded to high achieving women leaders from diverse backgrounds",
+      "VP of Retail & Luxury Goods Club; Member of Consulting, Women in Business, and TMT Clubs",
+      "Led Ferrari case competition on Dealership Customer Satisfaction; INSEAD Negotiation Cup Finalist, hosted by Horacio Falcao",
     ],
   },
   {
-    institution: "Manipal Institute of Technology",
+    institution: "Manipal Institute of Technology, Manipal Academy of Higher Education",
     location: "Manipal, India",
-    degree: "B.Tech Computer and Communication Engineering",
+    degree: "Bachelor of Technology in Computer and Communication Engineering",
     dates: "2015 – 2019",
     note: null,
     current: false,
@@ -395,7 +398,7 @@ export default function About() {
           {/* DOWNLOAD CV */}
           <div className="flex justify-center mt-16">
             <a
-              href="/Saloni_Suchdev_CV_Jun26.pdf"
+              href="/Saloni_Suchdev_CV_External_V4.pdf"
               download
               className="inline-block px-10 py-[14px] rounded-[2px] bg-[#111111] text-white hover:bg-[#F5C218] hover:text-[#111111] transition-colors duration-200 uppercase tracking-[0.1em] text-[13px] font-medium"
               style={{ fontFamily: "var(--font-inter)" }}
