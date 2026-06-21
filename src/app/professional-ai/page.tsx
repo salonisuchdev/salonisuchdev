@@ -94,7 +94,7 @@ export default function ProfessionalAI() {
                 <p>
                   Every account manager should know what happened at their
                   client's company before the client tells them. This tool
-                  delivers a daily briefing via email on six major consumer
+                  delivers a daily briefing via email on my major consumer
                   products accounts: leadership changes, M&A activity, financial
                   results, and product launches, organised by company and tagged
                   by category.
@@ -262,7 +262,7 @@ export default function ProfessionalAI() {
                   together client status updates from scattered sources. This
                   agent reads across Slack threads, email correspondence, and
                   Notion notes, synthesises the week's activity per client, and
-                  drafts a structured update ready by 10:00 CET.
+                  drafts a structured progress update and deck ready by 10:00 CET.
                 </p>
                 <p>
                   Consistent, complete communication for every client, every week.
