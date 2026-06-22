@@ -29,11 +29,19 @@ export default function Navigation() {
     <nav
       className="fixed top-0 left-0 right-0 z-50"
       style={{
+        backgroundColor: scrolled
+          ? isLightPage
+            ? "rgba(245,240,232,0.97)"
+            : "rgba(10,10,10,0.97)"
+          : "transparent",
+        backdropFilter: scrolled ? "blur(8px)" : "none",
+        WebkitBackdropFilter: scrolled ? "blur(8px)" : "none",
         borderBottom: scrolled
           ? isLightPage
             ? "1px solid rgba(0,0,0,0.1)"
             : "1px solid rgba(255,255,255,0.1)"
           : "none",
+        transition: "background-color 0.3s ease, backdrop-filter 0.3s ease",
       }}
     >
       <div className="flex items-center justify-between px-8 py-6">
@@ -99,7 +107,15 @@ export default function Navigation() {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden flex flex-col gap-5 px-8 pb-8">
+        <div
+          className="md:hidden flex flex-col gap-5 px-8 pb-8"
+          style={{
+            backgroundColor: isLightPage ? "#F5F0E8" : "#0A0A0A",
+            borderTop: isLightPage
+              ? "1px solid rgba(0,0,0,0.08)"
+              : "1px solid rgba(255,255,255,0.08)",
+          }}
+        >
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}

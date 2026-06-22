@@ -1,6 +1,5 @@
-const PhoneFrame = ({ src, alt }: { src: string; alt: string }) => (
-  <div style={{
-    width: "140px",
+const PhoneFrame = ({ src, alt, className = "" }: { src: string; alt: string; className?: string }) => (
+  <div className={className} style={{
     flexShrink: 0,
     background: "#1a1a1a",
     borderRadius: "32px",
@@ -172,7 +171,8 @@ export default function PersonalAI() {
               style={{
                 backgroundColor: project.bg,
                 opacity: project.opacity,
-                padding: "64px",
+                paddingTop: "64px",
+                paddingBottom: "64px",
               }}
               className="px-6 md:px-16 lg:px-24"
             >
@@ -238,10 +238,10 @@ export default function PersonalAI() {
                       {project.screens.map((screen, i) =>
                         i === 1 ? (
                           <div key={screen.src} style={{ transform: "scale(1.06)", transformOrigin: "bottom center" }}>
-                            <PhoneFrame src={screen.src} alt={screen.alt} />
+                            <PhoneFrame src={screen.src} alt={screen.alt} className="w-[100px] md:w-[140px]" />
                           </div>
                         ) : (
-                          <PhoneFrame key={screen.src} src={screen.src} alt={screen.alt} />
+                          <PhoneFrame key={screen.src} src={screen.src} alt={screen.alt} className="w-[100px] md:w-[140px]" />
                         )
                       )}
                     </div>
