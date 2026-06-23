@@ -21,16 +21,16 @@ const inter = Karla({
 
 export const metadata: Metadata = {
   title: "Saloni Suchdev",
-  description: "I help businesses stop talking about AI and start using it.",
+  description: "Saloni Suchdev's Portfolio: a business leader, MBA candidate at INSEAD.",
   openGraph: {
     title: "Saloni Suchdev",
-    description: "I help businesses stop talking about AI and start using it.",
+    description: "Saloni Suchdev's Portfolio: a business leader, MBA candidate at INSEAD.",
     images: [{ url: "/hero.JPG", width: 1200, height: 800, alt: "Saloni Suchdev" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Saloni Suchdev",
-    description: "I help businesses stop talking about AI and start using it.",
+    description: "Saloni Suchdev's Portfolio: a business leader, MBA candidate at INSEAD.",
     images: ["/hero.JPG"],
   },
 };
