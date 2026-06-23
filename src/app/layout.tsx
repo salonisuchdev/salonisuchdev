@@ -21,7 +21,10 @@ const inter = Karla({
 
 export const metadata: Metadata = {
   title: "Saloni Suchdev",
-  description: "Saloni Suchdev's Portfolio: a business leader, MBA candidate at INSEAD.",
+  description: "Portfolio of Saloni Suchdev — business leader, MBA candidate at INSEAD.",
+  icons: {
+    icon: "/favicon.ico",
+  },
   openGraph: {
     title: "Saloni Suchdev",
     description: "Saloni Suchdev's Portfolio: a business leader, MBA candidate at INSEAD.",
