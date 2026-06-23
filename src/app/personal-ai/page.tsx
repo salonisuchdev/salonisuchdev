@@ -102,7 +102,7 @@ export default function PersonalAI() {
               maxWidth: "700px",
             }}
           >
-            You stop showing up. I start making money.
+            When you stop showing up, the app starts making money.
           </h1>
 
           <p
