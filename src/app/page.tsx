@@ -3,6 +3,27 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main>
+      <style>{`
+  .editorial-line {
+    color: #F5C218;
+    transition: color 0.3s ease;
+    cursor: default;
+  }
+  .editorial-line:hover {
+    color: white;
+  }
+  .editorial-group {
+    cursor: default;
+  }
+  .editorial-group:hover .editorial-group-line {
+    color: white;
+  }
+  .editorial-group-line {
+    color: #F5C218;
+    transition: color 0.3s ease;
+    cursor: default;
+  }
+`}</style>
       {/* HERO */}
       <section className="relative flex w-full overflow-hidden" style={{ minHeight: "120vh", flexDirection: "column", justifyContent: "flex-start", alignItems: "center" }}>
         {/* Background photo — contained to this section only */}
@@ -24,6 +45,38 @@ export default function Home() {
             zIndex: 1,
           }}
         />
+
+        {/* Left editorial panel */}
+        <div
+          className="editorial-group absolute hidden xl:flex flex-col"
+          style={{ left: "40px", top: "50%", transform: "translateY(-50%)", zIndex: 10, gap: "12px" }}
+        >
+          <span className="editorial-group-line" style={{ fontFamily: "var(--font-cormorant)", fontSize: "22px", fontStyle: "italic", fontWeight: 400, lineHeight: 1.4, letterSpacing: "0.02em", whiteSpace: "nowrap" }}>
+            bringing <span style={{ fontSize: "24px", fontWeight: 600 }}>symbiotic partnerships</span>
+          </span>
+          <span className="editorial-group-line" style={{ fontFamily: "var(--font-cormorant)", fontSize: "22px", fontStyle: "italic", fontWeight: 400, lineHeight: 1.4, letterSpacing: "0.02em", whiteSpace: "nowrap" }}>
+            to life, from first client pitch
+          </span>
+          <span className="editorial-group-line" style={{ fontFamily: "var(--font-cormorant)", fontSize: "22px", fontStyle: "italic", fontWeight: 400, lineHeight: 1.4, letterSpacing: "0.02em", whiteSpace: "nowrap" }}>
+            to close of contract
+          </span>
+        </div>
+
+        {/* Right editorial panel */}
+        <div
+          className="absolute hidden xl:flex flex-col"
+          style={{ right: "40px", top: "50%", transform: "translateY(calc(-50% - 135px))", zIndex: 10, textAlign: "right" }}
+        >
+          <span className="editorial-line" style={{ fontFamily: "var(--font-cormorant)", fontSize: "21px", fontStyle: "italic", fontWeight: 600, lineHeight: 1.5, letterSpacing: "0.02em", marginBottom: "105px" }}>
+            Client Success Leader
+          </span>
+          <span className="editorial-line" style={{ fontFamily: "var(--font-cormorant)", fontSize: "21px", fontStyle: "italic", fontWeight: 400, lineHeight: 1.5, letterSpacing: "0.02em", marginBottom: "105px" }}>
+            5 years scaling B2B AI SaaS
+          </span>
+          <span className="editorial-line" style={{ fontFamily: "var(--font-cormorant)", fontSize: "21px", fontStyle: "italic", fontWeight: 400, lineHeight: 1.5, letterSpacing: "0.02em" }}>
+            INSEAD MBA'26
+          </span>
+        </div>
 
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center text-center px-6" style={{ paddingTop: "100px" }}>
