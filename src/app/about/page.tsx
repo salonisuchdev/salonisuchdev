@@ -11,11 +11,11 @@ const EXPERIENCE = [
         title: "Regional Head, Customer Success",
         dates: "2023 – 2025",
         bullets: [
-          "Doubled APAC ARR from USD 4M to USD 8M in Y1 by leading the full sales cycle, onboarding new contracts, and cross-selling dynamic pricing models across Southeast Asia and Oceania",
+          "Doubled APAC ARR from USD 4M to USD 8M in Y1 by leading full sales cycle, onboarding new contracts, and cross-selling dynamic pricing models across Southeast Asia and Oceania",
           "Closed three strategic contracts against competitors, carrying out quarterly and annual business reviews and scoping sessions with C-suite clients while owning monthly revenue targets with sales and finance",
           "Secured a USD 2M ARR, 3-year SaaS contract with an international ice-cream brand by running market visits, retail layout analysis, and digital GTM programmes across Southeast Asia, boosting regional sales by 7%",
-          "Managed a team of 4 PMs and 3 retail business streams, driving AI and data programmes end to end using insights from 98% accurate machine learning models across the APAC landscape",
-          "Drove adoption of a first-of-its-kind IoT and image-recognition smart vending system for the world's largest beverage company, delivering a 38% increase in sales across airports and universities across Oceania, securing European expansion",
+          "Accelerated end-to-end delivery of AI and data programmes by 20% by managing a team of four project managers across three retail business streams and leveraging insights from 98% accurate machine learning models",
+          "Increased client product sales by 38% across airports and universities in Oceania, securing European expansion, by leading the rollout of a first-of-its-kind IoT and image-recognition smart vending system for the world's largest beverage company",
         ],
       },
     ],
@@ -30,23 +30,23 @@ const EXPERIENCE = [
         title: "Lead Project Manager",
         dates: "2022 – 2023",
         bullets: [
-          "Led end-to-end AI-based execution programs to amplify monthly in-store sales by 3–4% (~USD 5M) for food & beverage brands tracking data-driven KPIs (market share, product positioning & compliance, promotions & discounts), mentoring a team of 7 PMs",
-          "Increased revenue by 18% (USD 1.5M) by prioritising and strategically onboarding new accounts while achieving over 85% POC-to-production conversion rate globally",
+          "Amplified monthly in-store client sales by 3–4% (~USD 2M across all stores) for food & beverage brands by mentoring a team of seven project managers and translating in-store KPIs into actionable commercial insights",
+          "Drove up revenue by 18% (USD 1.5M) by prioritising and strategically onboarding new accounts while achieving over 85% POC-to-production conversion rate globally",
         ],
       },
       {
         title: "Senior Project Manager",
         dates: "2021 – 2022",
         bullets: [
-          "Optimised data pipelines, operational frameworks, and SLAs, increasing customer satisfaction by 27% and customer retention by 34% through data-driven analytical insights and iterative client feedback loops",
-          "Expanded product, SDK, and API adoption to EU and USA by 1.5x via collaboration with product and development teams to establish APIs and SDKs for mobile application ease of use, compatibility, and integrations",
+          "Boosted customer satisfaction by 27% and customer retention by 34% by leveraging data-driven insights and iterative client feedback to optimise data pipelines and operational frameworks",
+          "Expanded product, SDK, and API adoption across Europe and the U.S. by 1.5x by partnering with product and engineering teams to enhance mobile application usability and integration capability through API and SDK development",
         ],
       },
       {
         title: "Project Manager",
         dates: "2020 – 2021",
         bullets: [
-          "Created, from scratch to finish, and scaled a comprehensive Pilot Playbook, streamlining processes and improving team efficiency by 40%, driving operational excellence and fostering cross-functional collaboration",
+          "Improved team efficiency by 40% by creating and scaling a comprehensive Pilot Playbook and launching an internal project management tool to strengthen cross-functional collaboration",
         ],
       },
     ],
@@ -61,7 +61,7 @@ const EXPERIENCE = [
         title: "Business Analyst – Flight Planning and Scheduling",
         dates: "2019 – 2020",
         bullets: [
-          "Lifted profits by USD 19M for European and Middle Eastern airlines and cut operational costs by 12% (~USD 7–8M) by programming in-house flight planning tools, identifying top expansion markets, and correcting fleet capacity and maintenance inefficiencies",
+          "Lifted profits by USD 19M for European and Middle Eastern airlines while reducing operational costs 12% (~USD 7-8M) by programming in-house flight planning tools, identifying high yield expansion markets, and correcting fleet capacity and maintenance inefficiencies",
         ],
       },
     ],
@@ -398,7 +398,7 @@ export default function About() {
           {/* DOWNLOAD CV */}
           <div className="flex justify-center mt-16">
             <a
-              href="/Saloni_Suchdev_CV_External_V4.pdf"
+              href="/Saloni_Suchdev_CV_2026.pdf"
               download
               className="inline-block px-10 py-[14px] rounded-[2px] bg-[#111111] text-white hover:bg-[#F5C218] hover:text-[#111111] transition-colors duration-200 uppercase tracking-[0.1em] text-[13px] font-medium"
               style={{ fontFamily: "var(--font-inter)" }}
