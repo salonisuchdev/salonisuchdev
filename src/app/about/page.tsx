@@ -58,7 +58,7 @@ const EXPERIENCE = [
     current: false,
     roles: [
       {
-        title: "Business Analyst – Flight Planning and Scheduling",
+        title: "Business Analyst, Flight Planning and Scheduling",
         dates: "2019 – 2020",
         bullets: [
           "Lifted profits by USD 19M for European and Middle Eastern airlines while reducing operational costs 12% (~USD 7-8M) by programming in-house flight planning tools, identifying high yield expansion markets, and correcting fleet capacity and maintenance inefficiencies",
@@ -85,7 +85,7 @@ const EDUCATION = [
   {
     institution: "Manipal Institute of Technology, Manipal Academy of Higher Education",
     location: "Manipal, India",
-    degree: "Bachelor of Technology in Computer and Communication Engineering",
+    degree: "B.Tech in Computer and Communication Engineering",
     dates: "2015 – 2019",
     note: null,
     current: false,
@@ -155,11 +155,11 @@ export default function About() {
                 stakeholders, and time zones.
               </p>
               <p>
-                I am currently pursuing my MBA at INSEAD, where I was awarded
+                I recently graduated with an MBA from INSEAD, where I was awarded
                 the Henriette and Nobert Albin Scholarship for high-achieving
-                women leaders from diverse backgrounds. I am VP of the Retail
+                women leaders from diverse backgrounds. I was VP of the Retail
                 and Luxury Goods Club, an INSEAD Negotiation Cup finalist, and
-                someone who takes case competitions entirely too seriously.
+                someone who took case competitions entirely too seriously.
               </p>
               <p>
                 Outside of work, I have trekked to Everest Base Camp at 5340m,
