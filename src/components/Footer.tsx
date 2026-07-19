@@ -4,7 +4,7 @@ const NAV_LINKS = [
   { label: "Who Am I", href: "/about" },
   { label: "AI in Practice", href: "/professional-ai" },
   { label: "Personal Projects", href: "/personal-ai" },
-  { label: "What I Know So Far", href: "/what-i-know" },
+  { label: "My Takes", href: "/what-i-know" },
 ];
 
 const CONTACT_LINKS = [

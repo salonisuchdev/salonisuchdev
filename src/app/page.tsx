@@ -146,7 +146,7 @@ export default function Home() {
               href: "/personal-ai",
             },
             {
-              title: "What I Know So Far",
+              title: "My Takes",
               description: "Unfiltered takes on business, technology, fashion, and culture.",
               href: "/what-i-know",
             },

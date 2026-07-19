@@ -52,7 +52,7 @@ export default function WhatIKnow() {
               lineHeight: 1,
             }}
           >
-            What I Know So Far
+            My Takes
           </h1>
           <p
             className="mt-5"
