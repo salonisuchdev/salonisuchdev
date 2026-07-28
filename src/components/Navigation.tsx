@@ -9,6 +9,7 @@ const NAV_LINKS = [
   { label: "AI in Practice", href: "/professional-ai" },
   { label: "Personal Projects", href: "/personal-ai" },
   { label: "My Takes", href: "/what-i-know" },
+  { label: "Legal Brief", href: "/legal-brief" },
 ];
 
 export default function Navigation() {
